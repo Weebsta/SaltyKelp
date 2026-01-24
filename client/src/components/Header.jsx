@@ -1,10 +1,11 @@
 import React from 'react';
+import './saltykelp.css';
 
 const Header = () => {
   return (
     <div className="mb-4">
       <br />
-        <img src="./logo512.png" width="240" alt="SaltyKelp" title="SaltyKelp" className="d-block mx-auto mb-4" />
+        <img src="./saltykelp-white.png" width="150" alt="SaltyKelp" title="SaltyKelp" className="a-block d-block mx-auto mb-4" />
     </div>
   )
 }
