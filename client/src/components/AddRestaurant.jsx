@@ -4,7 +4,6 @@ import { RestaurantsContext } from "../context/RestaurantsContext";
 
 const AddRestaurant = () => {
   const {addRestaurants} = useContext(RestaurantsContext);
-
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [priceRange, setPriceRange] = useState("Price Range");
@@ -19,7 +18,9 @@ const AddRestaurant = () => {
       });
       addRestaurants(response.data.data.restaurant);
       console.log(response);
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
