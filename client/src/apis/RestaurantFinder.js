@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://saltykelp.com/api/v1/restaurants",
+    baseURL: "https://0.0.0.0:5001/api/v1/restaurants",
 });
